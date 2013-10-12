@@ -80,16 +80,34 @@
                 <div id="header-top" class="clearfix">
 
                     <div class="kp-headline-wrapper clearfix">
-                        <h6 class="kp-headline-title">September 24 2013<span></span></h6>
-                        <div class="kp-headline clearfix"><!--ticker-1-->
-                        </div><!--kp-headline-->
+                        <h6 id="date" class="kp-headline-title">Some</h6>
+                        <script type="text/javascript">
+                            <!--
+                            (function (){
+                                var m_names = new Array("January", "February", "March",
+                                "April", "May", "June", "July", "August", "September",
+                                "October", "November", "December");
+
+                                var d = new Date();
+                                var curr_date = d.getDate();
+                                var curr_month = d.getMonth();
+                                var curr_year = d.getFullYear();
+                                document.getElementById('date').innerText = curr_date + " " + m_names[curr_month]  + " " + curr_year;
+
+                            })();
+                            //-->
+                        </script>
+                            <div class="kp-headline clearfix">
+                                <dl class="ticker-1 clearfix">
+                                    <dd><a href="#">September .12 .2013 - TextTextTextTextTextTextTextText</a></dd>
+                                    <dd><a href="#">Dalai Lama Visit: TextTextTextTextTextTextTextTextTextTextTextText</a></dd>
+                                </dl><!--ticker-1-->
+                            </div><!--kp-headline-->
                     </div><!--kp-headline-wrapper-->
 
                     <div class="social-search-box">
 
                         <ul class="social-links clearfix">
-                            <li><a href="#" data-icon="&#xe1ea;"></a></li>
-                            <li><a href="#" data-icon="&#xe1d8;"></a></li>
                             <li><a href="#" data-icon="&#xe1c3;"></a></li>
                             <li><a href="#" data-icon="&#xe1c7;"></a></li>
                             <li><a href="#" data-icon="&#xe1ca;"></a></li>
@@ -128,18 +146,12 @@
 
                         <ul id="main-menu" class="clearfix">
                         	<li class="current-menu-item"><a href="index.html">Home</a><span></span></li>
-
-                            <li><a href="opeds.html">OP-eds </a><span></span></li>
                             <li><a href="editorial.html">Editorials</a><span></span></li>
-                             <li><a href="academics.html">Academics </a><span></span></li>
-                            <li><a href="senate.html">senate watch </a><span></span></li>
-                            <li><a href="science.html">Science </a><span></span></li>
+                            <li><a href="senate.html">Senate Watch </a><span></span></li>
                                 <li><a href="categories.html">Blog</a><span></span>
                                 <ul>
                                 	<li><a href="categories.html">Blog post</a></li>
-                                    <li>
-                                    	<a href="single1.html">Single post</a>
-                                    </li>
+                                    <li><a href="single1.html">Single post</a></li>
                                 </ul>
                             </li>
                             <li><a href="contact.html">Contact </a><span></span></li>
@@ -392,7 +404,7 @@
                     	<div id="footer-logo">
                         	<a href="#"><img src="placeholders/logo.png" alt="" /></a>
                         </div><!--footer-logo-->
-                        <div class="textwidget">Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!</div>
+                        <div class="textwidget">Vox Populi - the voice of IITK, is the bimonthy newsletter of IITK. With a readership of more than 6000, Vox tries to acknowledge issues to pertaining to the residents of IITK - student or not.</div>
                     </div><!--widget-->
                 </div><!--widget-area-13-->
 
@@ -406,7 +418,6 @@
                             </p>
                         </form>
                         <div id="newsletter-response"></div>
-                        <p>Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!Read the latest Vox issue online!</p>
                     </div><!--widget-->
                 </div><!--widget-area-14-->
 
@@ -419,7 +430,6 @@
                 	<ul id="footer-menu" class="clearfix">
                     	<li><a href="#">Home</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Developed by Srijan R. Shetty</a></li>
                     </ul><!--footer-menu-->

@@ -554,7 +554,7 @@ Header
 /*----- Logo -----*/
 #logo-image {
 	float:left;
-	margin:25px 0 0 25px;
+	margin: -30px 25px;
 }
 .top-banner {
 	float:right;

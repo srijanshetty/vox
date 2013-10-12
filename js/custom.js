@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
     if(jQuery("#comments-form").length > 0){
 	// Validate the contact form
 	  jQuery('#comments-form').validate({
-	
+
 		// Add requirements to each of the fields
 		rules: {
 			name: {
@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
 				minlength: 10
 			}
 		},
-		
+
 		// Specify what error messages to display
 		// when the user does something horrid
 		messages: {
@@ -42,7 +42,7 @@ jQuery(document).ready(function(){
 				minlength: jQuery.format("At least {0} characters required.")
 			}
 		},
-		
+
 		// Use Ajax to send everything to processForm.php
 		submitHandler: function(form) {
 			jQuery("#submit-comment").attr("value", "Sending...");
@@ -56,11 +56,11 @@ jQuery(document).ready(function(){
 		}
 	  });
 	}
-	
+
 	if(jQuery("#contact-form").length > 0){
 	// Validate the contact form
 	  jQuery('#contact-form').validate({
-	
+
 		// Add requirements to each of the fields
 		rules: {
 			name: {
@@ -76,7 +76,7 @@ jQuery(document).ready(function(){
 				minlength: 10
 			}
 		},
-		
+
 		// Specify what error messages to display
 		// when the user does something horrid
 		messages: {
@@ -97,7 +97,7 @@ jQuery(document).ready(function(){
 				minlength: jQuery.format("At least {0} characters required.")
 			}
 		},
-		
+
 		// Use Ajax to send everything to processForm.php
 		submitHandler: function(form) {
 			jQuery("#submit-contact").attr("value", "Sending...");
@@ -160,39 +160,39 @@ Sub menu
 Mobile menu
 ============================================================ */
 jQuery(document).ready(function () {
-     
+
     jQuery('#mobile-menu > span').click(function () {
- 
+
         var mobile_menu = jQuery('#toggle-view-menu');
- 
+
         if (mobile_menu.is(':hidden')) {
             mobile_menu.slideDown('300');
-            jQuery(this).children('span').html('-');    
+            jQuery(this).children('span').html('-');
         } else {
             mobile_menu.slideUp('300');
-            jQuery(this).children('span').html('+');    
+            jQuery(this).children('span').html('+');
         }
-		
-		
-         
+
+
+
     });
-	
+
 	jQuery('#toggle-view-menu li').click(function () {
- 
+
         var text = jQuery(this).children('div.menu-panel');
- 
+
         if (text.is(':hidden')) {
             text.slideDown('300');
-            jQuery(this).children('span').html('-');    
+            jQuery(this).children('span').html('-');
         } else {
             text.slideUp('300');
-            jQuery(this).children('span').html('+');    
+            jQuery(this).children('span').html('+');
         }
-		
+
 		jQuery(this).toggleClass('active');
-         
+
     });
- 
+
 });
 
 /* =========================================================
@@ -205,36 +205,36 @@ jQuery(window).load(function(){
 	  jQuery('body').removeClass('loading');
 	}
   });
-  
+
   jQuery('.entry-thumb-slider').flexslider({
 	animation: "slide",
 	start: function(slider){
 	  jQuery('body').removeClass('loading');
 	}
   });
-  
+
   jQuery('.gallery-slider').flexslider({
 	animation: "slide",
 	start: function(slider){
 	  jQuery('body').removeClass('loading');
 	}
   });
-  
+
   jQuery('.kopa-single-slider').flexslider({
 	animation: "slide",
 	start: function(slider){
 	  jQuery('body').removeClass('loading');
 	}
   });
-  
+
 });
 
 /* =========================================================
 Tabs
 ============================================================ */
-jQuery(document).ready(function() { 
-	
-	if( jQuery(".tab-content-1").length > 0){   
+jQuery(document).ready(function() {
+
+	if( jQuery(".tab-content-1").length > 0){
         //Default Action Product Tab
         jQuery(".tab-content-1").hide(); //Hide all content
         jQuery("ul.tabs-1 li:first").addClass("active").show(); //Activate first tab
@@ -247,11 +247,11 @@ jQuery(document).ready(function() {
             var activeTab = jQuery(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
             jQuery(activeTab).fadeIn(); //Fade in the active content
             return false;
-		
+
         });
     }
-	
-	if( jQuery(".tab-content-2").length > 0){   
+
+	if( jQuery(".tab-content-2").length > 0){
         //Default Action Product Tab
         jQuery(".tab-content-2").hide(); //Hide all content
         jQuery("ul.tabs-2 li:first").addClass("active").show(); //Activate first tab
@@ -264,11 +264,11 @@ jQuery(document).ready(function() {
             var activeTab = jQuery(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
             jQuery(activeTab).fadeIn(); //Fade in the active content
             return false;
-		
+
         });
     }
-	
-	if( jQuery(".tab-content-3").length > 0){   
+
+	if( jQuery(".tab-content-3").length > 0){
         //Default Action Product Tab
         jQuery(".tab-content-3").hide(); //Hide all content
         jQuery("ul.tabs-3 li:first").addClass("active").show(); //Activate first tab
@@ -281,17 +281,17 @@ jQuery(document).ready(function() {
             var activeTab = jQuery(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
             jQuery(activeTab).fadeIn(); //Fade in the active content
             return false;
-		
+
         });
     }
-	
+
 });
 
 /* =========================================================
 Carousel
 ============================================================ */
 jQuery(window).load(function() {
-	
+
     if( jQuery(".kopa-featured-news-carousel").length > 0){
 		jQuery('.kopa-featured-news-carousel').carouFredSel({
 			responsive: true,
@@ -304,7 +304,7 @@ jQuery(window).load(function() {
 			items: {
 				width: 234,
 				height: 'auto',
-				visible: {				
+				visible: {
 					min: 1,
 					max: 4
 				}
@@ -324,12 +324,12 @@ jQuery(window).resize(function(){
     init_image_effect();
 });
 
-function init_image_effect(){    
+function init_image_effect(){
 
 	var view_p_w = jQuery(window).width();
 	var pp_w = 500;
 	var pp_h = 344;
-	
+
 	if(view_p_w <= 479){
 		pp_w = '120%';
 		pp_h = '100%';
@@ -338,14 +338,14 @@ function init_image_effect(){
 		pp_w = '100%';
 		pp_h = '170%';
 	}
-		    
+
     jQuery("a[rel^='prettyPhoto']").prettyPhoto({
         show_title: false,
         deeplinking:false,
         social_tools:false,
 		default_width: pp_w,
 		default_height: pp_h
-    });    
+    });
 }
 
 /* =========================================================
@@ -373,39 +373,39 @@ Accordion
 ========================================================= */
 jQuery(document).ready(function() {
         var acc_wrapper=jQuery('.acc-wrapper');
-        if (acc_wrapper.length >0) 
+        if (acc_wrapper.length >0)
         {
-			
+
             jQuery('.acc-wrapper .accordion-container').hide();
             jQuery.each(acc_wrapper, function(index, item){
                 jQuery(this).find(jQuery('.accordion-title')).first().addClass('active').next().show();
-				
+
             });
-			
+
             jQuery('.accordion-title').on('click', function(e) {
                 kopa_accordion_click(jQuery(this));
                 e.preventDefault();
             });
-			
+
 			var titles = jQuery('.accordion-title');
-			
+
 			jQuery.each(titles,function(){
 				kopa_accordion_click(jQuery(this));
 			});
         }
-		
+
 });
 
 function kopa_accordion_click (obj) {
 	if( obj.next().is(':hidden') ) {
 		obj.parent().find(jQuery('.active')).removeClass('active').next().slideUp(300);
 		obj.toggleClass('active').next().slideDown(300);
-							
+
 	}
 jQuery('.accordion-title span').html('+');
 	if (obj.hasClass('active')) {
-		obj.find('span').first().html('-');			     
-	} 
+		obj.find('span').first().html('-');
+	}
 }
 
 /* =========================================================
@@ -434,30 +434,30 @@ jQuery(document).ready(function(){
 Toggle Boxes
 ============================================================ */
 jQuery(document).ready(function () {
-     
+
     jQuery('#toggle-view li').click(function (event) {
- 		
+
         var text = jQuery(this).children('div.panel');
- 
+
         if (text.is(':hidden')) {
 			jQuery(this).addClass('active');
             text.slideDown('300');
-            jQuery(this).children('span').html('-');			     
+            jQuery(this).children('span').html('-');
         } else {
 			jQuery(this).removeClass('active');
             text.slideUp('300');
-            jQuery(this).children('span').html('+');			   
+            jQuery(this).children('span').html('+');
         }
-         
+
     });
- 
+
 });
 
 /* =========================================================
 Gallery slider
 ============================================================ */
 jQuery(window).load(function(){
-  
+
   jQuery('.kp-gallery-carousel').flexslider({
 	animation: "slide",
 	controlNav: false,
@@ -466,7 +466,7 @@ jQuery(window).load(function(){
 	itemMargin: 6,
 	asNavFor: '.kp-gallery-slider'
   });
-  
+
   jQuery('.kp-gallery-slider').flexslider({
 	animation: "slide",
 	controlNav: false,
@@ -485,7 +485,7 @@ jQuery(document).ready(function(){
 
 	// hide #back-top first
 	jQuery("#back-top").hide();
-	
+
 	// fade in #back-top
 	jQuery(function () {
 		jQuery(window).scroll(function () {
